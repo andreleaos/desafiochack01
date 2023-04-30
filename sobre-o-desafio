@@ -1,0 +1,20 @@
+Pesquisar o curl abaixo e pegar o resultado com os passos para iniciar o desafio:
+
+curl --location 'https://fiap-dotnet.azurewebsites.net/fiap' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: ARRAffinity=ea28117f37935a06a82e66eff48f06d1b7b74dc52d6f1ca845547af38ed9452e; ARRAffinitySameSite=ea28117f37935a06a82e66eff48f06d1b7b74dc52d6f1ca845547af38ed9452e' \
+--data '{
+  "today": "2023-04-27"
+}'
+
+
+####################################### Resultado do Curl ##################################
+
+{
+    "stepOne": "Voce deve desenvolver uma aplicacao .NET API que se connect ao banco PostgreSQL utilizando os dados host: 'db.onpggwsicxwenzhctuij.supabase.co' user: 'postgres' password: '8ylj6Ie5iGTVyvCq'",
+    "stepTwo": "Execute a query: select power_name from powers; Pegue o valor do resultado.",
+    "stepThree": "Com o valor do resultado, acesse a URL GET: https://fiap-dotnet.azurewebsites.net/Fiap/(valor do resultado da query)",
+    "stepFour": "Com a key retornada no passo anterior, concatene ela com a URL GET: https://fiap-dotnet.azurewebsites.net/Power/(string que retornou da api)",
+    "stepFive": "Corra que da tempo, tire uma foto do seu time e envie junto com o nome do animal, que voce pegou da imagem do passo anterior para URL POST: https://fiap-dotnet.azurewebsites.net/Power. Exemplo de curl: curl --location 'https://fiap-dotnet.azurewebsites.net/Power/(animal da imagem)' \\r\n--header 'accept: /' \\r\n--form 'file=@"..arquivo sendo enviado com formdata multpart.jpg"' curl puro: ",
+    "obs": "Conforme mencionado pelos professores, toda parte acima deve estar no codigo."
+}
